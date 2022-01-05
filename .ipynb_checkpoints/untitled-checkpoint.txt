@@ -1,0 +1,101 @@
+#Hipotez
+Bir inanışı test etmek için kullanılan istatistiksel bir tekniktir.
+#Hipotezler ve türleri
+H0 ve H1 olarak ikiye ayrılır.
+0 hipotezi ve alternatif hipotez denir.
+Parametrelere belirli değerler verilir.
+Ve bu h0 ile h1'in yönleri vardır.
+
+h0: u<=50
+h1: u>50
+
+h0: u>=50
+h1: u<50
+
+#Hata tipleri
+#p-value
+
+p<0.05
+0.04932
+
+Hipotez testlerinin sonuçlarını değerlendirmek üzere programlar tarafından p value değeri verilir. Bu değer üzrinden kolay yorum yapılır.
+
+p<0.05'den küçükse ilgili h0 hipotezini reddettiğimiz anlamına gelir.
+a = 0.05 kabul edilebilir hata miktarı
+
+Dağılım testlerinde h0 reddedilmek istenilmez. Çünkü h0 "örnek dağılımı ile teorik dağılım arasında fark yoktur" der.
+
+#Hipotez testi adımları
+Adım1: Hipotezlerin kurulması ve yönlerinin belirlenmesi
+Adım2: Anlamlılık düzeyinin ve tablo değerinin belirlenmesi. Alfadan bahsediyor. Güven aralığı
+Adım3: Test istatistiğinin belirlenmesi ve test istatistiğinin hesaplanması
+Adım4: Hesaplanan test istatistiği ile alfaya karşılık gelen tablo değerinin karşılaştırılması
+
+Test istatistiği (Zh) > Tablo değeri(Zt) ise H0 red.
+
+Adım5: Yorum
+
+TEK ÖRNEKLEM TESTİ -BÖLÜM2
+Örnek ortalamasına ilişkin test ortalaması için kullanılır.
+
+1. Anakütle standart sapması biliniyorsa z istatistiği kullanılır.
+2. Anakütle standart sapması bilinmiyorsa ve n>30 ise z istatistiği kullanılır.
+3. Anakütle standart sapması bilinmiyor ve n<30 ise t istatistiği kullanılır.
+
+n büyüdükçe t, z'e yaklaşır.
+
+#TEK ÖRNEKLEM ORAN TESTİ
+Oransal bir ifade test edilmek istenildiğinde kullanılır.
+
+İŞ UYGULAMASI: DÖNÜŞÜM ORANI TESTİ
+
+
+#BAĞIMSIZ İKİ ÖRNEKLEM T TESTİ(AB TESTİ)
+İki grup ortalaması arasında karşılaştırma yapılmak istenildiğinde kullanılır.
+
+H0: u1=u2
+H1: u1=!u2
+
+#ML Modelinin başarı testi(AB TESTİ) ML=Machine Learning
+
+#BAĞIMLI İKİ ÖRNEKLEM T TESTİ
+Bağımlı iki grup ortalaması arasında karşılaştırma yapılmak istenildiğinde kullanılır.
+
+H0: uö=us
+H1: uö=!us
+
+#Bağımlı iki örneklem t testi: varsayımlar
+Normallik
+Varyans Homojenliği
+
+#İKİ ÖRNEKLEM ORAN TESTİ: HİPOTEZLER
+
+h0: p1=p2
+h1: p1=!p2
+
+n1 > 30
+n2 > 30
+
+#VARYANS ANALİZİ
+İki ya da daha fazla grup ortalaması arasında istatistiksel olarak anlamlı farklılık olup olmadığı öğrenilmek istenildiğinde kullanılır.
+
+h0: u1=u2=u3
+h0: eşit değildir. (en az biri farklıdır)
+
+VARSAYIMLAR
+
+Gözlemlerin birbirinden bağımsız olması
+Normal dağılım
+Varyans homojenliği
+
+#KORELASYON ANALİZİ
+Değişkenler arasındaki ilişki, bu ilişkinin yönü ve şiddeti ile ilgili bilgiler sağlayan istatistiksel bir yöntemdir.
+
+Korelasyon anlamlılığının testi
+h0: p=0
+h1: p=!0
+
+Varsayımlar:
+İki değişken içinde normallik varsayımı,
+Varsayım sağlanıyosa Pearson Korelasyon Katsayısı
+Varsayım sağlanmıyorsa spearmen Korelasyon katsayısı
